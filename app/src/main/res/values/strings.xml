@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Epilego</string>
+    <string name="phone_number">phone number</string>
+    <string name="select_username">Name</string>
+</resources>

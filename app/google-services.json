@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "391444866100",
+    "firebase_url": "https://faith-hub-default-rtdb.firebaseio.com",
+    "project_id": "faith-hub",
+    "storage_bucket": "faith-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391444866100:android:cfcb10d57d40ac881c9661",
+        "android_client_info": {
+          "package_name": "com.faithhub.epilego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391444866100-h3c7ev73qpuattqn9ca0v8ou2see8gl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXmPc6ZfdT2iGduRM4zs5aYjRLkydRn9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391444866100-h3c7ev73qpuattqn9ca0v8ou2see8gl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391444866100:android:b15c6ab4064a78b31c9661",
+        "android_client_info": {
+          "package_name": "com.teqi.faithhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391444866100-2e726l4qar9fmelttuc05l4okcjkq0rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teqi.faithhub",
+            "certificate_hash": "e4decdfb296f3ff5c46244a0cdb0b139374e5e71"
+          }
+        },
+        {
+          "client_id": "391444866100-h3c7ev73qpuattqn9ca0v8ou2see8gl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXmPc6ZfdT2iGduRM4zs5aYjRLkydRn9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391444866100-h3c7ev73qpuattqn9ca0v8ou2see8gl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
