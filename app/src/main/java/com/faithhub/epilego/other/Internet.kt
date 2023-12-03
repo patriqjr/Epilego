@@ -36,8 +36,8 @@ object Internet {
     }
 
     @JvmStatic
-    val faithHubUsersDatabase =
-        FirebaseDatabase.getInstance().reference.child("FaithHubUsers")
+    val usersDatabase =
+        FirebaseDatabase.getInstance().reference.child("EpilegoUsers")
 
     @JvmStatic
     val userDevice =
@@ -72,7 +72,7 @@ object Internet {
     fun updateUser(ctx: Context, number: String?, task: () -> Unit) {
         try {
             CoroutineScope(Dispatchers.IO).launch {
-                val usersRef = faithHubUsersDatabase.child(number!!)
+                val usersRef = usersDatabase.child(number!!)
                 var listener: ValueEventListener? = object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         try {

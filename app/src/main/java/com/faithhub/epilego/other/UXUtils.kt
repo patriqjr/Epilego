@@ -5,7 +5,9 @@ import android.content.Context
 import android.os.Build
 import android.os.VibrationEffect
 import android.os.Vibrator
+import android.view.View
 import com.faithhub.epilego.R
+import com.google.android.material.snackbar.Snackbar
 
 object UXUtils {
 
@@ -30,37 +32,26 @@ object UXUtils {
     fun vibrate(context: Context) {
         val vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val effect = VibrationEffect.createOneShot(100, 60)
+            val effect = VibrationEffect.createOneShot(70, 30)
             vibrator.vibrate(effect)
         } else {
-            vibrator.vibrate(100)
+            vibrator.vibrate(70)
         }
     }
 
     @JvmStatic
     @Synchronized
-    fun toastError(ctx: Context, title: String?, msg: String?) {
-
+    fun toast(view: View, msg: String) {
+        Snackbar.make(
+            view, msg, Snackbar.LENGTH_LONG
+        ).show()
     }
 
-
-    @JvmStatic
-    fun toastInfo(ctx: Context, title: String, msg: String) {
-
-    }
 
     @Synchronized
-    fun toastInternet(ctx: Context) {
-
-    }
-
-    @JvmStatic
-    fun toastWarning(ctx: Activity, title: String, msg: String) {
-
-    }
-
-    @JvmStatic
-    fun toastSuccess(ctx: Context, title: String, msg: String) {
-
+    fun toastInternet(view: View) {
+        Snackbar.make(
+            view, "Please check your internet connection and try again", Snackbar.LENGTH_LONG
+        ).show()
     }
 }

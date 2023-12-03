@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg_translucent_square">
+
+    <include
+        android:id="@+id/lottie_day_bg"
+        layout="@layout/lottie_day" />
+
+    <include
+        android:id="@+id/lottie_night_bg"
+        layout="@layout/lottie_night" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_19sdp"
+        app:cardCornerRadius="@dimen/_19sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                app:srcCompat="@drawable/otp_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/otp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_20ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/otpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp6"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_text_bg"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16ssp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/didn_t_receive_otp"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_11ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/resendBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resend_code"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_11ssp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="@color/token_color"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

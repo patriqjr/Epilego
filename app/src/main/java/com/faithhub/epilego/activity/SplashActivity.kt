@@ -12,7 +12,10 @@ import com.faithhub.epilego.databinding.ActivitySplashBinding
 import com.faithhub.epilego.other.Internet
 import com.faithhub.epilego.other.LocalSharedPref
 import com.faithhub.epilego.other.UXUtils
+import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
+import com.google.firebase.appcheck.appCheck
+import com.google.firebase.appcheck.playintegrity.PlayIntegrityAppCheckProviderFactory
 
 
 @SuppressLint("CustomSplashScreen")
@@ -25,8 +28,10 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         FirebaseApp.initializeApp(this)
+        Firebase.appCheck.installAppCheckProviderFactory(
+            PlayIntegrityAppCheckProviderFactory.getInstance(),
+        )
         window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         try {
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
@@ -59,5 +64,4 @@ class SplashActivity : AppCompatActivity() {
             }
         }, 2500L)
     }
-
 }
